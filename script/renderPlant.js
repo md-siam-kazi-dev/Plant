@@ -5,14 +5,14 @@ const renderPlant = (plants)=>{
     plants.forEach(plant => {
         //console.log(plant)
         x = `<!-- Card (Tailwind only) -->
-<div class="w-[260px] overflow-hidden rounded-2xl border border-emerald-300 bg-white shadow-sm">
+<div class="w-full overflow-hidden rounded-2xl border border-emerald-300 bg-white shadow-sm">
   <!-- Image -->
   <div class="p-4">
     <img
       src="${plant.image}"
       alt="${plant.name}"
-      class="h-36 w-full rounded-xl object-cover"
-    />
+      class="h-36 w-full plant-img  rounded-xl object-cover"
+     id="img-${plant.id}"/>
   </div>
 
   <!-- Content -->
@@ -50,3 +50,5 @@ html += x;
     loadinghtml(false);
     plantContainer.innerHTML = html;
 }
+
+
