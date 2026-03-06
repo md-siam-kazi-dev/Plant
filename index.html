@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <h1 class=" text-4xl font-bold mx-auto">Chose tree</h1>
+    
+    <div class="parent-container flex flex-col lg:flex-row gap-2 mx-auto w-full lg:w-9/10 max-w-[1400px]">
+            <div id="category" class="sticky rounded-md p-5 bg-white"></div>
+
+
+        <div class="flex-1  mx-auto">
+            <div id="plant-container" class="plant-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full">
+            </div>
+            <div class="loading h-full  mx-auto flex justify-center items-center">
+                <span class="loading loading-dots loading-xl mx-auto"></span>
+
+            </div>
+        </div>
+            
+
+
+            <div class="cart-container"></div>
+    </div>
+    <script src="./script/renderPlant.js"></script>
+    <script src="./script/renderCatagory.js"></script>
+    <script src="./script/mac.js"></script>
+    <script src="./script/main.js"></script>
+</body>
+</html>
